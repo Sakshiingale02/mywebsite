@@ -1,0 +1,313 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap demo</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  </head>
+  <body>
+    <div class="container">
+        <p class="display-2 text-center">Movies</p>
+        <!--navigation bar started-->
+        <nav class=" sticky-top navbar navbar-expand-lg bg-body-tertiary">
+            <div class="container-fluid">
+              <a class="navbar-brand" href="#">Navbar</a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="#Home">Home</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#aboutus">aboutus</a>
+                  </li>
+                  <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                      Movies
+                    </a>
+                    <ul class="dropdown-menu">
+                      <li><a class="dropdown-item" href="#bollywood">Bollywood</a></li>
+                      <li><a class="dropdown-item" href="#hollywood">Hollywood</a></li>
+                      <li><hr class="dropdown-divider"></li>
+                      <li><a class="dropdown-item" href="#tollywood">Tollywood</a></li>
+                      <li><a class="dropdown-item" href="#youtubevideo">youtubevideo</a></li>
+                      
+                    </ul>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link disabled" aria-disabled="true">Disabled</a>
+                  </li>
+                </ul>
+                <form class="d-flex" role="search">
+                  <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                  <button class="btn btn-outline-success" type="submit">Search</button>
+                </form>
+              </div>
+            </div>
+          </nav>
+        <!--navigation bar end-->
+
+        <!--carrousel bar started-->
+        <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img height="400px" width="400px" src="mastanii.jpg" class="d-block w-100" alt="...">
+              </div>
+              <div class="carousel-item">
+                <img height="400px" width="400px" src="hollywood.jpeg" class="d-block w-100" alt="...">
+              </div>
+              <div class="carousel-item">
+                <img height="400px" width="400px" src="tollywood.jpeg" class="d-block w-100" alt="...">
+              </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+          
+        <!--carrousel bar end-->
+
+        <!--main content start-->
+          <div class="row mt-2">
+            <p id="bollywood" class="display-4 text-center">bollywood</p>
+          </div>
+          <div class="row">
+            <div class="col">
+              <div class="card" style="width: 18rem;">
+                <img height="200px" width="200px" src="mastanii.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">Bajirao mastani</h5>
+                  <p class="card-text">Based on Nagnath S. Inamdar's Marathi novel Rau, Bajirao Mastani narrates the story of the Maratha Peshwa Bajirao I (1700–1740) and his second wife, Mastani. Conceived as early as the 1990s, Bhansali announced the film in 2003 but production was delayed several times due to its changing cast.</p>
+                  <a href="#" class="btn btn-primary">Go somewhere</a>
+                </div>
+              </div>
+            </div>
+
+            <div class="col">
+              <div class="card" style="width: 18rem;">
+                <img height="200px" width="200px" src="devdas.jpeg" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">Devdas</h5>
+                  <p class="card-text">This is the sweeping tale of two soul mates, childhood sweethearts Devdas and Paro, whose love is thwarted by India's rigid class structure. Young Devdas is sent to study in London by his wealthy father. On his return, love blossoms again, but the families oppose the romance.</p>
+                  <a href="#" class="btn btn-primary">Go somewhere</a>
+                </div>
+              </div>
+            </div>
+
+            <div class="col">
+              <div class="card" style="width: 18rem;">
+                <img height="200px" width="200px" src="milkaaa.jpeg" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">Bhaag milkha bhaag</h5>
+                  <p class="card-text">Based on the life of Milkha Singh, an Indian athlete and Olympian who was a champion of the Commonwealth Games and two-time 400m champion of the Asian Games, it stars Farhan Akhtar in the title role alongside Divya Dutta, Meesha Shafi, Pavan Malhotra</p>
+                  <a href="#" class="btn btn-primary">Go somewhere</a>
+                </div>
+              </div>
+            </div>
+          
+
+           <div class="row mt-2">
+            <p id="hollywood" class="display-4 text-center">Hollywood</p>
+          </div>
+          <div class="row">
+            <div class="card" style="width: 18rem;">
+              <img height="200px" width="200px" src="avnger.jpg" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">Avengers</h5>
+                <p class="card-text">he Avengers follows Nick Fury and the spy agency S. H. I. E. L. D. recruiting Tony Stark, Steve Rogers, Bruce Banner, Thor, Natasha Romanoff and Clint Barton to form a team capable of stopping Thor's brother Loki from subjugating Earth.
+                </p>
+                <a href="#" class="btn btn-primary">Go somewhere</a>
+              </div>
+            </div>
+
+    
+            <div class="col">
+              <div class="card" style="width: 18rem;">
+                <img height="200px" width="200px" src="avtar.jpeg" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">avtar</h5>
+                  <p class="card-text">The title of the film refers to a genetically engineered Na'vi body operated from the brain of a remotely located human that is used to interact with the natives of Pandora. Development of Avatar began in 1994, when James Cameron wrote an 80-page
+                  </p>
+                  <a href="#" class="btn btn-primary">Go somewhere</a>
+                </div>
+              </div>
+            </div>
+
+            <div class="col">
+              <div class="card" style="width: 18rem;">
+                <img height="200px" width="200px" src="adam.jpeg" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">Adam</h5>
+                  <p class="card-text">DAM tells the true story of Adam Niskar (Aaron Paul), a ruthless, ambitious salesman, whose life is turned upside down when he is the victim of an accident that confines him to a wheelchai</p>
+                  <a href="#" class="btn btn-primary">Go somewhere</a>
+                </div>
+              </div>
+            </div>
+
+            <div class="row mt-2">
+              <p id="tollywood" class="display-4 text-center">Tollywood</p>
+            </div>
+            <div class="row">
+              <div class="card" style="width: 18rem;">
+                <img height="200px" width="200px" src="rrr.jpeg" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">RRR</h5>
+                  <p class="card-text">RRR (subtitled onscreen as Roudram Ranam Rudhiram) is a 2022 Indian Telugu-language epic period action drama film directed by S. S. Rajamouli, who co-wrote the film with V. Vijayendra Prasad. It was produced by D. V. V. Danayya of DVV Entertainment.
+                  </p>
+                  <a href="#" class="btn btn-primary">Go somewhere</a>
+                </div>
+              </div>
+
+              <div class="col">
+                <div class="card" style="width: 18rem;">
+                  <img height="200px" width="200px" src="pushpa.jpeg" class="card-img-top" alt="...">
+                  <div class="card-body">
+                    <h5 class="card-title">Pushpa</h5>
+                    <p class="card-text">he first installment in the Pushpa film series, the film depicts the rise of a coolie Pushpa Raj in the smuggling syndicate of red sandalwood, a rare wood that grows only in the Seshachalam Hills of Tirupati in Andhra Pradesh state.</p>
+                    <a href="#" class="btn btn-primary">Go somewhere</a>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col">
+                <div class="card" style="width: 18rem;">
+                  <img height="200px" width="200px" src="bahubali.jpeg" class="card-img-top" alt="...">
+                  <div class="card-body">
+                    <h5 class="card-title">Bahubali</h5>
+                    <p class="card-text">A popular figure in Digambara Jain mythology, Bahubali (meaning “the strong-armed”) is believed to have been the son of Rishabhadeva, the first Jina. Also known as Gomateshvara, Bahubali is most popularly recognised through five monolithic statues erected in present-day Karna</p>
+                    <a href="#" class="btn btn-primary">Go somewhere</a>
+                  </div>
+                </div>
+              </div>
+  
+  
+
+
+      
+        
+
+
+        <!--main content end-->
+
+        <!--video content start-->
+        <div class="row">
+          <p id="youtubevideo" class="display-4 text-center">youtubevideo</p>
+
+          <iframe width="560" height="315" src="https://www.youtube.com/embed/Hr-mxwWvCfo?si=L9Hy6hx883DvhRJI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+
+        </div>
+
+
+  
+        <!--video content end-->
+        <!--about us start-->
+        <div class="row mt-2" id="about">
+          <p class="display-4 text-center text-primary"></p>
+          <p class="fw-bold fs-1 text-center text-info"></p>
+          <div class="row">
+           <div class="col">
+            <div class="card" style="width: 18rem;">
+              <img src="director3.jpeg" class="card-img-top" alt="...">
+              <div class="card-body">
+                <p class="card-text">Rajamouli is one of the celebrated directors of the Indian film industry. He spent his childhood moving between Kovvur, Andhra Pradesh and Eluru, Andhra Pradesh due to his father's job.
+
+                  He completed his first year of intermediate studies in Eluru and the second year in Kovvur. With a background in</p>
+              </div>
+            </div>
+
+           </div>
+           <div class="col">
+            <div class="card" style="width: 18rem;">
+              <img src="director4.jpeg" class="card-img-top" alt="...">
+              <div class="card-body">
+                <p class="card-text">Yash Chopra, (born September 27, 1932, Lahore, Punjab, British India [now in Pakistan]—died October 21, 2012, Mumbai, India), Punjabi filmmaker, who was known for his Bollywood films, especially romances such as Dilwale dulhania le jayenge (1995; “The Brave-Hearted [or Lover] Takes the Bride”) and action-packed thrillers such as Deewaar (1975; “Wall”). He is credited with opening the international market to Indian cinema</p>
+              </div>
+            </div>
+
+           </div>
+           <div class="col">
+            <div class="card" style="width: 18rem;">
+              <img src="direction6.jpeg" class="card-img-top" alt="...">
+              <div class="card-body">
+                <p class="card-text">Hollywood directors are practically synonymous with western cinema. While the term Hollywood still refers to one particular neighborhood in Los Angeles, it was about a hundred years ago when it started becoming an encompassing metonym for the American movie industry itself.</p>
+              </div>
+            </div>
+
+           </div>
+          </div>
+
+        </div>
+        <!--about us end-->
+
+        <!--contact us start-->
+        <div class="row mt-2" id="contact">
+          <p class="text-center text-info fw-bold fs-3">Contact us</p>
+          <div class="col">
+            <address>
+              shop no 116, Privia Square, Spine Rd, Moshi Pradhikaran, Sector No. 6, Moshi, Pimpri-Chinchwad, Maharashtra 412105
+            </address>
+            <i class="fa-solid fa-envelope"></i>sakshiing123@gmail.com
+
+          </div>
+          <div class="col">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15120.723075630076!2d73.829443!3d18.655882450000004!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bc2c75518e91c1b%3A0xefe9cb5950000d34!2svaijayanti%20films!5e0!3m2!1sen!2sin!4v1698989566657!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+          </div>
+        </div>
+        <!--contact us end-->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+  </body>
+</html>
